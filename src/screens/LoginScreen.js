@@ -38,7 +38,7 @@ export default function LoginScreen(props) {
                     <Text style={{fontSize: 18, fontFamily: 'Kanit-Regular', color: '#aaa', backgroundColor: '#f2f2f2', textAlign: 'center', zIndex: 2, width: '36%', }}>
                         ไม่มีบัญชีผู้ใช้
                     </Text>
-                    <Text style={{borderBottomColor: '#aaa', borderBottomWidth: 2, position: 'absolute', width: '100%', top: -5}}>
+                    <Text style={{borderBottomColor: '#aaa', borderBottomWidth: 2, position: 'absolute', width: '100%', top: -6}}>
 
                     </Text>
                 </View>
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
     },
     textInput: {
-        height: 40, 
+        height: 50, 
         fontFamily: 'Kanit-Regular',
         color: '#333',
         fontSize: 18,
