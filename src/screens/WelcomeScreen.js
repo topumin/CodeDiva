@@ -16,9 +16,7 @@ export default function WelcomeScreen(props) {
                 <TouchableOpacity style={styles.button} activeOpacity={0.6}>
                     <Text style={styles.text}>English</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.button} activeOpacity={0.6} onPress={() => {
-                    setModalVisible(true);
-                }}>
+                <TouchableOpacity style={styles.button} activeOpacity={0.6} onPress={() => {setModalVisible(true);}}>
                     <Text style={styles.text}>ไทย</Text>
                 </TouchableOpacity>
             </View>

@@ -33,7 +33,7 @@ export default function LoginScreen(props) {
            </View>
 
            <View style={styles.buttonGroup}>
-                <TouchableOpacity style={styles.buttonOrange} activeOpacity={0.6}>
+                <TouchableOpacity style={styles.buttonOrange} activeOpacity={0.6} onPress={()=>{props.navigation.navigate("RequestOTP")}}>
                     <Text style={{color: '#fff', fontSize: 18, fontFamily: 'Kanit-Regular',}}>เข้าสู่ระบบ</Text>
                 </TouchableOpacity>
                 <View style={{height: 55, position: 'relative', flexDirection: 'column', alignItems: 'center',}}>
