@@ -74,7 +74,7 @@ export default function ConfirmOTPScreen(props) {
                     keyboardType='numeric'
                     placeholder= '9'
                     maxLength={1} 
-                    ref={(input) => { this.fifthTextInput = input; }}
+                    ref={(input) => { this.sixthTextInput = input; }}
                     />
             </View>
             <View style={styles.textGroup, {marginTop: 60, alignItems: 'center'}}>
