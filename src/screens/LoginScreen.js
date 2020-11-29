@@ -15,16 +15,18 @@ export default function LoginScreen(props) {
                     style={styles.textInput}
                     placeholder="รหัสผ่าน"
                 />
-                <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 40, alignItems: 'center',}}>
+                <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 40, alignItems: 'center', width: '100%'}}>
                     <View style={{flexDirection: 'row', alignItems: 'center',}}>
                         <CheckBox
                              value={false}
                         />
-                        <Text style={styles.text}>
+                        <Text style={styles.smallText}>
                             บันทึกข้อมูลเข้าสู่ระบบ
                         </Text>
                     </View>
-                    <Text style={styles.text}>
+                    <Text 
+                        style={styles.smallText} 
+                        onPress={()=>{props.navigation.navigate("Forgot")}}>
                         ลืมรหัสผ่าน ?
                     </Text>
                 </View>
@@ -34,16 +36,16 @@ export default function LoginScreen(props) {
                 <TouchableOpacity style={styles.buttonOrange} activeOpacity={0.6}>
                     <Text style={{color: '#fff', fontSize: 18, fontFamily: 'Kanit-Regular',}}>เข้าสู่ระบบ</Text>
                 </TouchableOpacity>
-                <View style={{height: 60, position: 'relative', flexDirection: 'column', alignItems: 'center',}}>
-                    <Text style={{fontSize: 18, fontFamily: 'Kanit-Regular', color: '#aaa', backgroundColor: '#f2f2f2', textAlign: 'center', zIndex: 2, width: '36%', }}>
+                <View style={{height: 55, position: 'relative', flexDirection: 'column', alignItems: 'center',}}>
+                    <Text style={{fontSize: 16, fontFamily: 'Kanit-Regular', color: '#aaa', backgroundColor: '#f2f2f2', textAlign: 'center', zIndex: 2, width: '33%', }}>
                         ไม่มีบัญชีผู้ใช้
                     </Text>
-                    <Text style={{borderBottomColor: '#aaa', borderBottomWidth: 2, position: 'absolute', width: '100%', top: -6}}>
+                    <Text style={{borderBottomColor: '#aaa', borderBottomWidth: 2, position: 'absolute', width: '100%', top: -9}}>
 
                     </Text>
                 </View>
                 <TouchableOpacity style={styles.buttonTransparent} activeOpacity={0.6} onPress={()=>{props.navigation.navigate("Login")}}>
-                    <Text style={{color: '#f77105', fontSize: 18, fontFamily: 'Kanit-Regular',}}>เปิดบัญชีเพื่อลงทะเบียนผู้ใช้</Text>
+                    <Text style={{color: '#f77105', fontSize: 16, fontFamily: 'Kanit-Regular',}}>เปิดบัญชีเพื่อลงทะเบียนผู้ใช้</Text>
                 </TouchableOpacity>
             </View>
 
@@ -64,6 +66,10 @@ const styles = StyleSheet.create({
     text: {
         fontFamily: 'Kanit-Regular', 
         fontSize: 18,
+    },
+    smallText: {
+        fontFamily: 'Kanit-Regular', 
+        fontSize: 16,
     },
     textInput: {
         height: 50, 
