@@ -7,6 +7,8 @@ import LoginScreen from './screens/LoginScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
 import ForgotPasswordScreen from './screens/ForgotPasswordScreen';
 import CompleteScreen from './screens/CompleteScreen';
+import RequestOTPScreen from './screens/RequestOTPScreen';
+import ConfirmOTPScreen from './screens/ConfirmOTPScreen';
 
 
 const Stack = createStackNavigator();
@@ -19,6 +21,8 @@ const RootStack = (props) => {
       <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }}/>
       <Stack.Screen name="Forgot" component={ForgotPasswordScreen} options={{ headerShown: false }}/>
       <Stack.Screen name="Complete" component={CompleteScreen} options={{ headerShown: false }}/>
+      <Stack.Screen name="RequestOTP" component={RequestOTPScreen} options={{ headerShown: false }}/>
+      <Stack.Screen name="ConfirmOTP" component={ConfirmOTPScreen} options={{ headerShown: false }}/>
     </Stack.Navigator>
   );
 };

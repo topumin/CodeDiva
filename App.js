@@ -7,7 +7,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <View style={{flex: 1}}>
-        <StatusBar barStyle="dark-content" />
+        <StatusBar barStyle="dark-content" style={{backgroundColor: '#e85100'}}/>
         <SafeAreaView />
         <AppNavigator/>
       </View>
