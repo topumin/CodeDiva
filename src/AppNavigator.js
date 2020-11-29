@@ -5,6 +5,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import LoginScreen from './screens/LoginScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
+import ForgotPasswordScreen from './screens/ForgotPasswordScreen';
+import CompleteScreen from './screens/CompleteScreen';
 
 
 const Stack = createStackNavigator();
@@ -15,6 +17,8 @@ const RootStack = (props) => {
     <Stack.Navigator initialRouteName="Welcome">
       <Stack.Screen name="Welcome" component={WelcomeScreen} options={{ headerShown: false }} />
       <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }}/>
+      <Stack.Screen name="Forgot" component={ForgotPasswordScreen} options={{ headerShown: false }}/>
+      <Stack.Screen name="Complete" component={CompleteScreen} options={{ headerShown: false }}/>
     </Stack.Navigator>
   );
 };
