@@ -82,7 +82,7 @@ export default function ConfirmOTPScreen(props) {
                 <Text style={{fontFamily: 'Kanit-Medium', fontSize: 18, marginTop: 10, color: '#f77105'}}>ส่งรหัสใหม่ ({seconds})</Text>
             </View>
             <View style={styles.buttonGroup}>
-                <TouchableOpacity style={styles.buttonOrange} activeOpacity={0.6} onPress={()=>{props.navigation.goBack()}}>
+                <TouchableOpacity style={styles.buttonOrange} activeOpacity={0.6} onPress={()=>{props.navigation.navigate('Pincode')}}>
                     <Text style={{color: '#fff', fontSize: 18, fontFamily: 'Kanit-Regular',}}>ยืนยันรหัส OTP</Text>
                 </TouchableOpacity>
             </View>
