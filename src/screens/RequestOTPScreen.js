@@ -1,26 +1,22 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native'
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 
-export default function ForgotPasswordScreen(props) {
+export default function RequestOTPScreen(props) {
     return (
         <View style={styles.container}>
             <TouchableOpacity activeOpacity={0.6} onPress={()=>{props.navigation.goBack()}}>
                 <Image source={require('../imgs/left-arrow.png')} style={styles.iconBack}/>
             </TouchableOpacity>
             <View style={styles.textGroup}>
-                <Text style={{fontFamily: 'Kanit-Medium', fontSize: 28}}>ลืมรหัผ่าน ? </Text>
-                <Text style={{fontFamily: 'Kanit-Regular', fontSize: 18, marginTop: 10}}>กรุณากรอกอีเมลหรือเบอร์โทรศัพท์ที่ลงทะเบียน</Text>
+                <Image source={require('../imgs/otp.png')} style={styles.image}/>
+                <Text style={{fontFamily: 'Kanit-Medium', fontSize: 26, marginTop: 40,}}>OTP จะถูกส่งไปที่เบอร์โทรศัพท์</Text>
+                <Text style={{fontFamily: 'Kanit-Regular', fontSize: 26, marginTop: 10, color: '#f77105',}}>089-XXX-5155</Text>
             </View>
-            <View style={styles.textInputGroup , {marginTop: 50}}>
-                <TextInput
-                    style={styles.textInput}
-                    placeholder="อีเมล / เบอร์โทรศัพท์"
-                />
-           </View>
-           <View style={styles.buttonGroup, {marginTop: 30}}>
-                <TouchableOpacity style={styles.buttonOrange} activeOpacity={0.6} onPress={()=>{props.navigation.navigate("Complete")}}>
-                    <Text style={{color: '#fff', fontSize: 18, fontFamily: 'Kanit-Regular',}}>ส่ง</Text>
+           <View style={styles.buttonGroup, {marginTop: 50, justifyContent: 'center', alignItems: 'center'}}>
+                <TouchableOpacity style={styles.buttonOrange} activeOpacity={0.6} onPress={()=>{props.navigation.navigate("ConfirmOTP")}}>
+                    <Text style={{color: '#fff', fontSize: 18, fontFamily: 'Kanit-Regular',}}>ขอรหัส OTP</Text>
                 </TouchableOpacity>
+                <Text style={styles.smallText}>กรณีเบอร์โทรศัพท์ไม่ถูกต้องกรุณาติดต่อเบอร์ 02-111-1111</Text>
             </View>
         </View>
     )
@@ -46,6 +42,11 @@ const styles = StyleSheet.create({
         fontFamily: 'Kanit-Regular', 
         fontSize: 18,
     },
+    smallText: {
+        fontFamily: 'Kanit-Regular', 
+        fontSize: 12,
+        color: '#bbb',
+    },
     textInput: {
         height: 50, 
         fontFamily: 'Kanit-Regular',
@@ -56,10 +57,11 @@ const styles = StyleSheet.create({
         marginBottom: 22,
     },
     textGroup: {
-        marginTop: 20,
+        marginTop: 120,
         flexDirection: 'column', 
         justifyContent: 'center', 
-        alignItems: 'flex-start'
+        alignItems: 'center',
+        marginBottom: 40,
     },
     buttonOrange: {
         width: '100%',
@@ -70,6 +72,10 @@ const styles = StyleSheet.create({
         fontFamily: 'Kanit-Bold',
         fontSize: 20,
         marginBottom: 20,
-        textAlign: 'center',
+    },
+    image: {
+        width: 60, 
+        height: 60, 
+        resizeMode: 'cover'
     },
 });
