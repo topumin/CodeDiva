@@ -8,7 +8,7 @@ export default function ForgotPasswordScreen(props) {
                 <Image source={require('../imgs/left-arrow.png')} style={styles.iconBack}/>
             </TouchableOpacity>
             <View style={styles.textGroup}>
-                <Text style={{fontFamily: 'Kanit-Medium', fontSize: 28}}>ลืมรหัผ่าน ? </Text>
+                <Text style={{fontFamily: 'Kanit-Medium', fontSize: 28}}>ลืมรหัสผ่าน ? </Text>
                 <Text style={{fontFamily: 'Kanit-Regular', fontSize: 18, marginTop: 10}}>กรุณากรอกอีเมลหรือเบอร์โทรศัพท์ที่ลงทะเบียน</Text>
             </View>
             <View style={styles.textInputGroup , {marginTop: 50}}>

@@ -35,7 +35,7 @@ export default function CancelTouchIDScreen(props) {
                     </View>
                 </View>
             </Modal>
-            <Text style={{fontSize: 22, fontFamily: 'Kanit-Regular', marginBottom: 20,}}>กรูณากรอกรหัส PIN</Text>
+            <Text style={{fontSize: 22, fontFamily: 'Kanit-Regular', marginBottom: 20,}}>กรุณากรอกรหัส PIN</Text>
             <View style={styles.pinGroup}>
                 <View style={styles.smallPincode}></View>
                 <View style={styles.smallPincode}></View>

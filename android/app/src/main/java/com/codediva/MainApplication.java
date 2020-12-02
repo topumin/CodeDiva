@@ -4,7 +4,6 @@ import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
-import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import ca.jaysoo.extradimensions.ExtraDimensionsPackage;
 import com.reactnativecommunity.checkbox.ReactCheckBoxPackage;
 import org.reactnative.maskedview.RNCMaskedViewPackage;
